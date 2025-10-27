@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="841" height="841" viewBox="0 0 841 841" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g transform="translate(420.5 420.5)">
+    <circle r="35" fill="#61DAFB"/>
+    <g stroke="#61DAFB" stroke-width="16" fill="none">
+      <ellipse rx="210" ry="70" transform="rotate(0)"/>
+      <ellipse rx="210" ry="70" transform="rotate(60)"/>
+      <ellipse rx="210" ry="70" transform="rotate(120)"/>
+    </g>
+  </g>
+</svg>
