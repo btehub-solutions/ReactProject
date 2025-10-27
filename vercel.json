@@ -1,27 +1,10 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "my-vite-react-app/package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "my-vite-react-app/dist",
-        "zeroConfig": true
-      }
-    }
-  ],
-  "routes": [
-    {
-      "src": "/assets/(.*)",
-      "dest": "/my-vite-react-app/dist/assets/$1"
-    },
-    {
-      "src": "/images/(.*)",
-      "dest": "/my-vite-react-app/dist/images/$1"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/my-vite-react-app/dist/index.html"
-    }
+  "outputDirectory": "my-vite-react-app/dist",
+  "buildCommand": "npm run vercel-build",
+  "installCommand": "npm install",
+  "framework": "vite",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
