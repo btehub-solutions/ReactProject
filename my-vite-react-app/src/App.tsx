@@ -5,7 +5,7 @@ function App() {
     <ProfileCard
       name="Ben Sam Oladoyin"
       role="AI Automation Engineer"
-      image="/images/profile-photo.jpg"
+      image="./images/profile-photo.jpg"
     />
   );
 }
