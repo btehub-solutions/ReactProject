@@ -4,11 +4,24 @@
     {
       "src": "my-vite-react-app/package.json",
       "use": "@vercel/static-build",
-      "config": { "distDir": "dist" }
+      "config": {
+        "distDir": "my-vite-react-app/dist",
+        "zeroConfig": true
+      }
     }
   ],
   "routes": [
-    { "handle": "filesystem" },
-    { "src": "^/(.*)$", "dest": "/index.html" }
+    {
+      "src": "/assets/(.*)",
+      "dest": "/my-vite-react-app/dist/assets/$1"
+    },
+    {
+      "src": "/images/(.*)",
+      "dest": "/my-vite-react-app/dist/images/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/my-vite-react-app/dist/index.html"
+    }
   ]
 }
